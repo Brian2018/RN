@@ -13,6 +13,7 @@ import {
   TextInput,
   Button
 } from 'react-native';
+import Home from './home';
 import {
   createStackNavigator,
 } from 'react-navigation';
@@ -36,7 +37,7 @@ export default class App extends Component {
           <TextInput password={true} style={styles.input} placeholder="请输入密码"/>
         </View> 
         <View style={{margin:50}}>
-          <Button style={styles.button} title='登录'/>    
+          <Button style={styles.button} title='登录' onPress={()=>{}}/>    
         </View>
         <Image source={require('../public/img/login/15.png')} style={{width:65,height:55,marginLeft:150 }}/>
         <Image source={require('../public/img/login/18.png')} style={{width:360,height:70,marginLeft:0,position:'absolute',bottom:0}}/>
