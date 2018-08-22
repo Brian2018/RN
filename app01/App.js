@@ -12,14 +12,14 @@ import {
   createStackNavigator,
 } from 'react-navigation';
 import Login from './component/login'
-class starScreen extends React.Component {  
+class starScreen extends React.Component {
   static navigationOptions = () => ({
-    header:null, 
+    header: null,
   });
-  componentDidMount(){    
-    window.start=setTimeout(() => this.props.navigation.navigate('Login'),1000)
+  componentDidMount() {
+    window.start = setTimeout(() => this.props.navigation.navigate('Login'), 1000)
   }
-  componentWillUnmount(){
+  componentWillUnmount() {
     window.clearTimeout(window.start);
   }
   render() {
@@ -30,18 +30,14 @@ class starScreen extends React.Component {
     );
   }
 }
-const RootStack = createStackNavigator(
-  {
-    Start: starScreen,
-    Login: Login,
-  },  
-  {
-    initialRouteName: 'Start',
-  }, 
-);
+const RootStack = createStackNavigator({
+  Start: starScreen,
+  Login: Login,
+}, {
+  initialRouteName: 'Start',
+}, );
 export default class App extends React.Component {
   render() {
     return <RootStack />;
   }
 }
-
