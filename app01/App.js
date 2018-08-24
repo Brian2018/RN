@@ -16,6 +16,7 @@ class starScreen extends React.Component {
   static navigationOptions = () => ({
     header: null,
   });
+  //注释
   componentDidMount() {
     window.start = setTimeout(() => this.props.navigation.navigate('Login'), 1000)
   }
