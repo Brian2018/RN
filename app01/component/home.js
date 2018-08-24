@@ -12,6 +12,7 @@ import {
 import {
 	createStackNavigator,
 } from 'react-navigation';
+//煮熟
 export default class Home extends React.Component {
 	static navigationOptions = () => ({
 		header: null,
