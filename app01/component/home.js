@@ -19,9 +19,9 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<View style={{ flex: 1, flexDirection: 'row',}}>
-				<Image style={{width:25,height:25,marginLeft:5}} source={require('../public/img/login/07.png')}/>
+				<Image style={{width:20,height:20,marginLeft:5}} source={require('../public/img/login/07.png')}/>
 				<Text>This is home</Text>	
-				<Image style={{width:25,height:25,marginRight:5}} source={require('../public/img/login/08.png')}/>	               
+				<Image style={{width:20,height:20,marginRight:5}} source={require('../public/img/topTabBar/topSearch.png')}/>	               
 		    </View>
 		);
 	}
