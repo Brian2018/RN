@@ -22,7 +22,7 @@ export default class Home extends React.Component {
 	static navigationOptions = () => ({
 		header: null,
 	});
-	//测试
+	//测试1
 	render() {
 		return (
 			<View style={{ flex: 1,backgroundColor:'#fff'}}>
