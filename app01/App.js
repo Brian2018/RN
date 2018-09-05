@@ -15,8 +15,7 @@ import Login from './component/login'
 class starScreen extends React.Component {
   static navigationOptions = () => ({
     header: null,
-  });
-  //注释
+  });  
   componentDidMount() {
     window.start = setTimeout(() => this.props.navigation.navigate('Login'), 1000)
   }
@@ -26,7 +25,7 @@ class starScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Image source={require('./public/img/start.png')} style={{ width: 150, height: 80 }} />         
+        <Image source={require('./public/img/start.png')} style={{ width: 150, height: 80 }} />
       </View>
     );
   }

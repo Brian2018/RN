@@ -22,13 +22,14 @@ export default class Home extends React.Component {
 	static navigationOptions = () => ({
 		header: null,
 	});
+	//测试
 	render() {
 		return (
 			<View style={{ flex: 1,backgroundColor:'#fff'}}>
 				<View style={{ flex: 1, flexDirection: 'row',height:10}}>
 					<Image style={styles.titlePic} source={require('../public/img/login/07.png')}/>
-					<Text style={{ flex: 10,textAlign: 'center',lineHeight:40}}>This is home</Text>	
-					<Image style={styles.titleSearch} source={require('../public/img/topTabBar/topSearch.png')}/>						
+					<Text style={{ flex: 10,textAlign: 'center',lineHeight:40}}>This is home</Text>
+					<Image style={styles.titleSearch} source={require('../public/img/topTabBar/topSearch.png')}/>
 				</View>
 				<View style={{flex: 5,height:170}}>
 					<Swiper style={{flex: 1,height:170}} autoplay={true}
@@ -42,15 +43,15 @@ export default class Home extends React.Component {
 			            <View style={{flex: 1,height:170}} >
 			                <Image style={{width:400,height:170}} source={require('../public/img/home/home_nzmg/2_03.png')}/>
 			            </View>
-			        </Swiper>						
-			    </View> 
+			        </Swiper>
+			    </View>
 			    <View style={{flex: 12,height:170}}>
 					<View style={{flex:1,flexDirection:'row',padding:5}}>
 						<View style={styles.middle1}><Text style={styles.middleText}>项目数:</Text></View>
 						<View style={styles.middle2}><Text style={styles.middleText}>电站数:</Text></View>
 					</View>
 					<View style={{flex:8}}></View>
-			    </View>		            
+			    </View>
 		    </View>
 
 		);
