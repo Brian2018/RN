@@ -28,20 +28,20 @@ class Login extends Component {
   render() {
     return (
       <View style={styles.page}>
-        <Image source={require('../public/img/login/11.png')} style={styles.img1} />        
+        <Image source={require('../public/img/login/11.png')} style={styles.img1} />
         <Image source={require('../public/img/login/12.png')} style={styles.imgText}/>
         <View style={{flexDirection:'row'}}>
           <Image source={require('../public/img/login/07.png')} style={styles.img07}/>
           <Text style={styles.text}>账号:</Text>
           <TextInput style={styles.input} placeholder="请输入用户名"/>
-        </View>        
+        </View>
         <View style={{flexDirection:'row'}}>
           <Image source={require('../public/img/login/08.png')} style={styles.img07}/>
           <Text style={styles.text}>密码:</Text>
           <TextInput password={true} style={styles.input} placeholder="请输入密码"/>
-        </View> 
+        </View>
         <View style={{margin:50}}>
-          <Button style={styles.button} title='登录' onPress={()=>this.props.navigation.navigate('Home')}/>    
+          <Button style={styles.button} title='登录' onPress={()=>this.props.navigation.navigate('Home')}/>
         </View>
         <Image source={require('../public/img/login/15.png')} style={{width:65,height:55,marginLeft:150 }}/>
         <Image source={require('../public/img/login/18.png')} style={{width:360,height:70,marginLeft:0,position:'absolute',bottom:0}}/>

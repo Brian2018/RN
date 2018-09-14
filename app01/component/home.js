@@ -22,7 +22,6 @@ export default class Home extends React.Component {
 	static navigationOptions = () => ({
 		header: null,
 	});
-	//测试1
 	render() {
 		return (
 			<View style={{ flex: 1,backgroundColor:'#fff'}}>
@@ -50,10 +49,14 @@ export default class Home extends React.Component {
 						<View style={styles.middle1}><Text style={styles.middleText}>项目数:</Text></View>
 						<View style={styles.middle2}><Text style={styles.middleText}>电站数:</Text></View>
 					</View>
+					<View style={{fles:1,flexDirection:'row'}}>
+						<View style={{flex:1}}>
+
+						</View>
+					</View>
 					<View style={{flex:8}}></View>
 			    </View>
 		    </View>
-
 		);
 	}
 }
